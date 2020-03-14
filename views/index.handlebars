@@ -1,0 +1,39 @@
+<h1>Eat-Da-Burger!<br><br><img src="https://www.supermarketnews.com/sites/supermarketnews.com/files/styles/article_featured_retina/public/image-placeholder-title_0.jpg?itok=nwfCD61_"></h1>
+
+
+<div class="row">
+<div class="column" id="left">
+<ul>
+  {{#each burgers}}
+   {{#unless devoured}}
+    <p id="notdervoured">{{burger_name}}
+    <button class="change-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
+		Devour it!
+	  </button></p>
+    {{/unless}}
+  {{/each}}
+  
+</ul>
+</div>
+
+<div class="column" id="right">
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+    <p id="devoured">{{burger_name}}</p>
+    {{/if}}
+  {{/each}}
+   
+</ul>
+</div>
+</div>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <textarea id="burger" name="burger_name"></textarea>
+  </div>
+
+  <button type="submit" id="submit">Submit</button>
+  <p>Enter a burger you want to eat and click the "Submit" button</p>
+</form>
