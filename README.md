@@ -1,7 +1,7 @@
 # Eat-Da-Burger
 [Burger Deploy Application!](https://lit-crag-62543.herokuapp.com/) - https://lit-crag-62543.herokuapp.com/
 
-<img src="public/assets/css/demo" >
+<img src="./public/assets/css/demo.png" >
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
